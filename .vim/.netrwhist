@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/Shkryaba/Desktop/2bc/projects/hoops/hoops/firmware_v2_nrf'
+let g:netrw_dirhist_2='/Users/Shkryaba/Desktop/2bc/projects/hoops/hoops_mac/hardware/firmware/firmware_v2_nrf/hoop_test'
+let g:netrw_dirhist_3='scp://vagrant@192.168.1.250//opt/openframeworks/apps/myApps/buttonwall3/game/src/'
+let g:netrw_dirhist_4='scp://twobit@192.168.50.100//opt/openframeworks/apps/myApps/gametable_input/src/'
+let g:netrw_dirhist_5='scp://vagrant@192.168.1.250//opt/openframeworks/apps/myApps/buttonwall3/game/src/'
+let g:netrw_dirhist_6='scp://vagrant@192.168.2.250//opt/openframeworks/apps/myApps/buttonwall3/game/src/'

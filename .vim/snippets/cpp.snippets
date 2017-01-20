@@ -1,0 +1,24 @@
+extends c
+
+snippet it
+	for (vector<${1:}>::iterator ${2:}=${3:}.begin(); $2!=$3.end(); $2++) {
+	  ${4}
+	}
+
+snippet auto
+	for (auto & ${1:} : ${2}){
+	  ${3}
+	}
+
+snippet pp
+	 + " " +
+
+snippet log
+	ofLog()<<${1:};
+
+snippet cl
+	class ${1:`vim_snippets#Filename('$1', 'name')`} {
+	public:
+	  $1(${2});
+	  ~$1();
+	};

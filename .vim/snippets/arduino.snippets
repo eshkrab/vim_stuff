@@ -1,0 +1,74 @@
+# Vim snippets for Arduino
+#
+# http://hardwarefun.com
+#
+#  Copyright 2013 Sudar Muthu  (http://sudarmuthu.com)
+#  ------------------------------------------------------------------------------
+#  "THE BEER-WARE LICENSE" (Revision 42):
+#  Sudar <http://sudarmuthu.com> wrote this file.
+#  As long as you retain this notice you can do whatever you want with this stuff.
+#  If we ever meet and you are overcome with gratitude,
+#  feel free to express your feelings via beverage :)
+#  ------------------------------------------------------------------------------
+
+extends c
+
+#  ------------------------------------------------------------------------------
+# Setup and loop
+#  ------------------------------------------------------------------------------
+snippet setup "setup()"
+	void setup() {
+	  ${1}
+	}
+
+snippet loop "loop()"
+	void loop() {
+	  ${1}
+	}
+
+snippet log
+	Serial.println(${1:});
+
+snippet cl
+	class ${1:`vim_snippets#Filename('$1', 'name')`} {
+	public:
+	  $1(${2});
+	  ~$1();
+	;
+
+#  ------------------------------------------------------------------------------
+# Digital Read and write
+#  ------------------------------------------------------------------------------
+snippet dwh "digitalWrite - High"
+	digitalWrite(${1:13},${2:HIGH});
+
+snippet dwl "digitalWrite - Low"
+	digitalWrite(${1:13},${2:LOW});
+
+snippet dr "digitalRead"
+	digitalRead(${1:13});
+
+#  ------------------------------------------------------------------------------
+# Analog Read and write
+#  ------------------------------------------------------------------------------
+snippet awh "analogWrite - High"
+	analogWrite(${1:13},${2:});
+
+snippet awl "analogWrite - Low"
+	analogWrite(${1:13},${2:});
+
+snippet ar "analogRead"
+	analogRead(${1:13});
+
+#  ------------------------------------------------------------------------------
+# pinMode function
+#  ------------------------------------------------------------------------------
+snippet pin "pinMode - Input"
+	pinMode(${1:});
+
+snippet pinin "pinMode - Input"
+	pinMode(${1:13},${2:INPUT});
+
+snippet pinout "pinMode - Output"
+	pinMode(${1:13},${2:OUTPUT});
+
